@@ -2,7 +2,8 @@ html,
 body {
   position: relative;
   height: 100%;
-  overflow: hidden;
+  overflow-y: auto;
+  overflow-x: hidden;
   background: #eee;
 }
 
@@ -221,10 +222,29 @@ body {
 .image {
   width: 60%;
 }
+
 .swiper-container-wrapper--timeline .swiper-slide .content .image {
   width: 60%;
   display: flex;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
+}
+
+[data-component="slideshow"] .slide {
+	display: none;
+  text-align: center;
+
+}
+
+[data-component="slideshow"] .slide.active {
+	display: block;
+}
+
+.image-resize {
+  display: block;
+  max-width: 300px;
+  max-height: 350px;
+  width: auto;
+  height: auto;
 }
