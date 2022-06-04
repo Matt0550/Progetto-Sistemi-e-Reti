@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
-    <title>CodePen - Swiper - Timeline Progressbar</title>
+    <title>Programma 2022 | Sistematicamente</title>
     <link rel='stylesheet' href='https://unpkg.com/swiper/swiper-bundle.min.css'>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'>
     <link rel="stylesheet" href="../style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="prefetch" href="../2021/index.html"/>
 
 </head>
@@ -20,7 +19,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Chiudi" onclick='closeModal();'></button>
                 </div>
                 <div class="modal-body">
-                    <p>Per visualizzare questo sito web, è fortemente consigliato utilizzare un dispositivo desktop con uno schermo più ampio</p>
+                    <p>Per visualizzare questo sito web è fortemente consigliato utilizzare un dispositivo con uno schermo più grande</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick='closeModal();'>Chiudi</button>
@@ -38,7 +37,7 @@
                 <li class='swiper-pagination-switch'><span class='switch-title'>Febbraio 2022</span></li>
                 <li class='swiper-pagination-switch'><span class='switch-title'>Marzo 2022</span></li>
                 <li class='swiper-pagination-switch'><span class='switch-title'>Aprile 2022</span></li>
-                <li class='swiper-pagination-switch last'><span class='switch-title'>Maggio 2022</span></li>
+                <li class='swiper-pagination-switch last'><span class='switch-title'>Fine anno</span></li>
             </ul>
             <!-- Progressbar -->
             <div class="swiper-pagination swiper-pagination-progressbar swiper-pagination-horizontal"></div>
@@ -60,9 +59,9 @@
                         <div class="content">
                             <img src="./images/1.png" alt="BIOS" class="image" loading="lazy">
                             <p>
-                                Al rientro delle vacanze natalizie, ci siamo dedicati alle <b>architetture non Von Neumann</b> e successivamente, a studiare nel dettaglio l'<b>avvio di un computer</b>.
-                                Abbiamo visto, come funziona la fase di <b>bootstrap</b> e <b>POST</b> di un computer e di come accedere al <b>BIOS</b> per modificarne le impostazioni.
-                                Infine, abbiamo visto come <b>resettare alle impostazioni di fabbrica il BIOS</b> e di come rimuovere la <b>batteria CMOS</b>.
+                                Al rientro delle vacanze natalizie, ci siamo dedicati alle <b>architetture non Von Neumann</b> e, successivamente, a studiare nel dettaglio l'<b>avvio di un computer</b>.
+                                Abbiamo visto come funziona la fase di <b>bootstrap</b> e <b>POST</b> di un computer e di come accedere al <b>BIOS</b> per modificarne le impostazioni.
+                                Infine, abbiamo visto anche come <b>resettare alle impostazioni di fabbrica il BIOS</b>.
                                 
                             </p>
                         </div>
@@ -75,8 +74,51 @@
                         <div class="content">
                             <img src="./images/2.png" alt="Master Boot Record" class="image" loading="lazy">
                             <p>
-                                Nel corso di queste lezioni, abbiamo analizzato nel dettaglio, come un computer gestisca le sue <b>partizioni</b>, e il relativo <b>file system</b>, 
-                                studiando quindi nel dettaglio il <b>Master Boot Record</b> e il <b>GUID Partition Table</b>.
+                                Nel corso di queste lezioni, abbiamo analizzato nel dettaglio come un computer gestisce le sue <b>partizioni</b> e il relativo <b>file system</b>, 
+                                studiando quindi nel dettaglio il <b>Master Boot Record</b> e le sue limitazioni e difetti.
+                                Infine, abbiamo anche visto il funzionamento delle <b>macchine virtuali</b>.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <span class="subtitle custom">Marzo 2022</span>
+                        <span class="title custom">La UEFI</span>
+                        <span class="subtitle-bottom custom">E il microprocessore</span>
+                        <div class="content">
+                            <img src="./images/3.png" alt="Master Boot Record" class="image" loading="lazy">
+                            <p>
+                                In queste lezioni abbiamo analizzato le caratteristiche della <b>UEFI</b>, confrontandola con il <b>BIOS</b>.
+                                Successivamente abbiamo visto come una <b>CPU</b> elabori le proprie istruzioni seguendo un <b>determinato ciclo</b> salvando i suoi dati nei <b>registri</b>.
+                                Abbiamo anche visto come è possibile utilizzare diverse <b>tecniche o architetture</b> che permettono di <b>velocizzare l'esecuzione delle istruzioni</b>.
+                                Infine, durante questo periodo ci è stata data la possibilità di partecipare alle <b>olimpiadi STEM</b>.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <span class="subtitle custom">Aprile 2022</span>
+                        <span class="title custom">Olimpiadi STEM</span>
+                        <span class="subtitle-bottom custom">E ripasso</span>
+                        <div class="content">
+                            <img src="./images/4.png" alt="Master Boot Record" class="image" loading="lazy">
+                            <p>
+                                Durante questo periodo, abbiamo effettuato un ripasso del programma, soffermandoci dove più bisogno, al fine di prepararci per le <b>valutazioni</b>.
+                                Nel mentre ci siamo anche esercitati per le <b>olimpiadi STEM</b> vincendo anche il livello regionale.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <span class="subtitle custom">Maggio/Giugno 2022</span>
+                        <span class="title custom">Droni</span>
+                        <span class="subtitle-bottom custom">E Assembly</span>
+                        <div class="content">
+                            <video src="./images/droni.mp4" controls autoplay muted loop class="image"></video>
+                            <p>
+                                Durante la fine dell'anno, abbiamo utilizzato dei <b>droni programmabili</b> utilizzando sia il software proprietario, sia il linguaggio <b>Python</b>, con l'obiettivo
+                                di realizzare una coreografia con vari droni.
+                                Nel mentre abbiamo anche iniziato a studiare un nuovo linguaggio, <b>Assembly</b>, incominciando a vedere i vari flag e la sintassi base.
                             </p>
                         </div>
                     </div>
