@@ -83,7 +83,6 @@ body {
   bottom: 0;
   z-index: 11;
   width: 75%;
-  display: flex;
 }
 
 .swiper-container-wrapper--timeline .swiper-pagination-custom .swiper-pagination-switch {
@@ -220,11 +219,11 @@ body {
 }
 
 .image {
-  width: 60%;
+  width: 430px;
 }
 
 .swiper-container-wrapper--timeline .swiper-slide .content .image {
-  width: 60%;
+  width: 430px;
   display: flex;
   margin-left: auto;
   margin-right: auto;

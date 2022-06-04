@@ -5,23 +5,22 @@
     <title>CodePen - Swiper - Timeline Progressbar</title>
     <link rel='stylesheet' href='https://unpkg.com/swiper/swiper-bundle.min.css'>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="prefetch" href="./2022/index.html"/>
 
 </head>
 
 <body>
-    <div class="container">
+    <div class="container" id="swiper-2021">
         <div class="swiper-container-wrapper swiper-container-wrapper--timeline">
             <!-- Timeline -->
             <ul class="swiper-pagination-custom">
-                <li class='swiper-pagination-switch first active'><span class='switch-title'>Settembre 2021</span></li>
-                <li class='swiper-pagination-switch'><span class='switch-title'>Ottobre 2021</span></li>
-                <li class='swiper-pagination-switch'><span class='switch-title'>Novembre 2021</span></li>
-                <li class='swiper-pagination-switch'><span class='switch-title'>Albero 3.0</span></li>
-                <li class='swiper-pagination-switch'><span class='switch-title'>Dicembre 2021</span></li>
-                <li class='swiper-pagination-switch last'><span class='switch-title'>2022</span></li>
+                <li class='swiper-pagination-switch first active'><span class='switch-title'>2021</span></li>
+                <li class='swiper-pagination-switch'><span class='switch-title'>Gennaio 2022</span></li>
+                <li class='swiper-pagination-switch'><span class='switch-title'>Febbraio 2022</span></li>
+                <li class='swiper-pagination-switch'><span class='switch-title'>Marzo 2022</span></li>
+                <li class='swiper-pagination-switch'><span class='switch-title'>Aprile 2022</span></li>
+                <li class='swiper-pagination-switch last'><span class='switch-title'>Maggio 2022</span></li>
             </ul>
             <!-- Progressbar -->
             <div class="swiper-pagination swiper-pagination-progressbar swiper-pagination-horizontal"></div>
@@ -29,6 +28,13 @@
             <div class="swiper swiper-container swiper-container--timeline">
                 <div class="swiper-wrapper">
                     <!-- Slides -->
+
+                    <div class="swiper-slide">
+                        <span class="subtitle custom">Dicembre 2021</span>
+                        <span class="title custom">Scrorri per proseguire</span>
+                        <span class="subtitle-bottom custom">Scorri indietro per andare allo scorso anno</span>
+                    </div>
+
                     <div class="swiper-slide">
                         <span class="subtitle custom">Settembre 2021</span>
                         <span class="title custom">Il sistema di elaborazione</span>
@@ -134,13 +140,6 @@
                             </p>
                         </div>
                     </div>
-
-                    <div class="swiper-slide">
-                        <span class="subtitle custom">Gennaio 2022</span>
-                        <span class="title custom">Scrorri per proseguire</span>
-                        <span class="subtitle-bottom custom">Scorri avanti per andare al prossimo anno</span>
-                    </div>
-
                 </div>
             </div>
         </div>
