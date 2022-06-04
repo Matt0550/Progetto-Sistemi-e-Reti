@@ -5,14 +5,31 @@
     <title>CodePen - Swiper - Timeline Progressbar</title>
     <link rel='stylesheet' href='https://unpkg.com/swiper/swiper-bundle.min.css'>
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="../style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="prefetch" href="./2022/index.html"/>
+    <link rel="prefetch" href="../2022/index.html"/>
 
 </head>
 
 <body>
-    <div class="container">
+    <div class="modal" id="modal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Schermo troppo piccolo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Chiudi" onclick='closeModal();'></button>
+                </div>
+                <div class="modal-body">
+                    <p>Per visualizzare questo sito web, è fortemente consigliato utilizzare un dispositivo desktop con uno schermo più ampio</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick='closeModal();'>Chiudi</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="container">
         <div class="swiper-container-wrapper swiper-container-wrapper--timeline">
             <!-- Timeline -->
             <ul class="swiper-pagination-custom">
@@ -70,10 +87,10 @@
                         <span class="title custom">Le memorie</span>
                         <span class="subtitle-bottom custom">Introduzione</span>
                         <div class="content">
-                            <img src="./images/3.png" alt="Arduino" class="image" loading="lazy">
+                            <img src="./images/3.png" alt="Hard Disk" class="image" loading="lazy">
                             <p>
                                 Nel corso di queste lezioni, abbiamo approfondito maggiormente le caratteristiche delle <b>memorie</b> primarie e secondarie che utilizziamo tutti i giorni.
-                                Nello specifico, abbiamo analizzato le <b>memorie USB</b>, che sono le più comuni, le <b>memorie flash</b>, gli Hard Disk, le <b>memorie RAM</b>, le <b>memorie ROM</b>, le <b>memorie SRAM</b>, le <b>memorie EPROM</b> e le <b>memorie SDRAM</b>.
+                                Nello specifico, abbiamo analizzato le <b>memorie USB</b>, che sono le più comuni, le <b>memorie flash</b>, gli Hard Disk, le <b>memorie ROM</b>, le <b>memorie SRAM</b>, le <b>memorie EPROM</b> e le <b>memorie DRAM</b>.
                                 <br>
                                 Inoltre, abbiamo continuato ad approfondire <b>Arduino</b>, conoscendo un nuovo sensore: il <b>sensore di luce</b>.
                             </p>
@@ -122,15 +139,14 @@
 
                     <div class="swiper-slide">
                         <span class="subtitle custom">Dicembre 2021</span>
-                        <span class="title custom">Educazione Civica</span>
-                        <span class="subtitle-bottom custom">La sostenibilità</span>
+                        <span class="title custom">Architetture non Von Neumann</span>
+                        <span class="subtitle-bottom custom">E preventivo PC</span>
                         <div class="content">
-                            <img src="./images/5.png" alt="Arduino" class="image" loading="lazy">
+                            <img src="./images/5.png" alt="Memorie" class="image" loading="lazy">
                             <p>
-                                Nel corso di queste lezioni, abbiamo terminato lo studio delle memorie e iniziato gli argomenti di <b>educazione civica</b>.
-                                Nello specifico, abbiamo parlato della <b>sostenibilità digitale</b>, utilizzando dei materiali forniti da <b>Samsung</b>.
-                                Ci siamo inoltre soffermati sui <b>rifiuti RAEE</b>, realizzando anche un elaborato dove abbiamo individuato i rifiuti RAEE nelle nostre case.
-                                Abbiamo, infine realizzato un <b>preventivo per l'acquisto di un computer desktop</b> con un determinato budget.
+                                Nel corso di queste lezioni abbiamo terminato lo studio delle memorie analizzando anche i <b>DVD</b>, i <b>CD</b> e i <b>RAID</b>.
+                                Inoltre, abbiamo realizzato un <b>preventivo per l'acquisto di un computer desktop</b> con un determinato budget.
+                                Infine, abbiamo anche presentato il nostro <b>Alberto 3.0</b> all'<b>Open Day</b> della scuola.
                             </p>
                         </div>
                     </div>
@@ -151,6 +167,7 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-slider/1.0.1/simpleslider.min.js"></script>
     <script src="./script.js"></script>
+    <script src="../detect.js"></script>
 </body>
 
 </html>

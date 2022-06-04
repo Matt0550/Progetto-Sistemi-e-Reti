@@ -28,7 +28,7 @@ $(document).ready(function () {
             transitionEnd: function () {
                 if (this.realIndex === 0) {
                     // Redirect to next page
-                    window.location.href = "../";
+                    window.location.href = "../2021/";
                 }
             }
         }

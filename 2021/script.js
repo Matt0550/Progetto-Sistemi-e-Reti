@@ -28,7 +28,7 @@ $(document).ready(function () {
       transitionEnd: function () {
         if (this.realIndex === this.slides.length - 1) {
           // Redirect to next page
-          window.location.href = "./2022/";
+          window.location.href = "../2022/";
         }
       }
     }
@@ -38,6 +38,7 @@ $(document).ready(function () {
     $(".swiper-pagination-custom .swiper-pagination-switch").removeClass("active");
     $(this).addClass("active");
   });
+
 });
 
 var slideshows = document.querySelectorAll('[data-component="slideshow"]');

@@ -7,11 +7,29 @@
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/css/bootstrap.min.css'>
     <link rel="stylesheet" href="../style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="prefetch" href="../2021/index.html"/>
 
 </head>
 
 <body>
-    <div class="container" id="swiper-2021">
+    <div class="modal" id="modal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Schermo troppo piccolo</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Chiudi" onclick='closeModal();'></button>
+                </div>
+                <div class="modal-body">
+                    <p>Per visualizzare questo sito web, è fortemente consigliato utilizzare un dispositivo desktop con uno schermo più ampio</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" onclick='closeModal();'>Chiudi</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="container">
         <div class="swiper-container-wrapper swiper-container-wrapper--timeline">
             <!-- Timeline -->
             <ul class="swiper-pagination-custom">
@@ -36,107 +54,29 @@
                     </div>
 
                     <div class="swiper-slide">
-                        <span class="subtitle custom">Settembre 2021</span>
-                        <span class="title custom">Il sistema di elaborazione</span>
-                        <span class="subtitle-bottom custom">Il modello di Von Neumann</span>
+                        <span class="subtitle custom">Gennaio 2022</span>
+                        <span class="title custom">L'avvio di un computer</span>
+                        <span class="subtitle-bottom custom">E il BIOS</span>
                         <div class="content">
-                            <img src="./images/1.png" alt="Von Neumann" class="image" loading="lazy">
+                            <img src="./images/1.png" alt="BIOS" class="image" loading="lazy">
                             <p>
-                                Dopo essere rientrati dalle vacanze estive, ci siamo dedicati fin da subito, nel comprendere il funzionamento di un <b>computer</b>.
-                                Nello specifico, abbiamo analizzato il modello, che ancora oggi è in uso, di <b>Von Neumann</b>, analizzando i suoi componenti fondamentali.
-                                In questo modello, troviamo diversi componenti fondamentali, come la <b>CPU</b>, la <b>memoria centrale</b>, il sistema di <b>input e output</b>.
-                                Tutti questi componenti, sono tutti collegati tra loro attraverso la <b>scheda madre</b>, dove sono presenti anche i <b>bus</b> di comunicazione, indirizzi e dati.
-                                Abbiamo anche accennato le varie tipologie di <b>memorie primare</b> (ROM, DRAM, SRAM) e <b>secondarie</b> (Hard Disk, CD).
-                                <br>
-                                Sono, infine state svolte varie attività di valutazione, con l'obiettivo di comprendere meglio l'argomento soffermandoci per più tempo dove necessario.
+                                Al rientro delle vacanze natalizie, ci siamo dedicati alle <b>architetture non Von Neumann</b> e successivamente, a studiare nel dettaglio l'<b>avvio di un computer</b>.
+                                Abbiamo visto, come funziona la fase di <b>bootstrap</b> e <b>POST</b> di un computer e di come accedere al <b>BIOS</b> per modificarne le impostazioni.
+                                Infine, abbiamo visto come <b>resettare alle impostazioni di fabbrica il BIOS</b> e di come rimuovere la <b>batteria CMOS</b>.
+                                
                             </p>
                         </div>
                     </div>
 
                     <div class="swiper-slide">
-                        <span class="subtitle custom">Ottobre 2021</span>
-                        <span class="title custom">Arduino</span>
-                        <span class="subtitle-bottom custom">Introduzione</span>
+                        <span class="subtitle custom">Febbraio 2022</span>
+                        <span class="title custom">Le partizioni</span>
+                        <span class="subtitle-bottom custom">E il master boot record</span>
                         <div class="content">
-                            <img src="./images/2.png" alt="Arduino" class="image" loading="lazy">
+                            <img src="./images/2.png" alt="Master Boot Record" class="image" loading="lazy">
                             <p>
-                                Per quanto riguarda le attività di laboratorio, ci siamo dedicati fin da subito allo studio pratico e teorico del microcontrollore <b>Arduino</b>.
-                                Siamo partiti, utilizzando la sheda Arduino Mega 2560 R3 , con la realizzazione di un semplice circuito per l'<b>accensione di un led</b>.
-                                Per farlo, è stato anche necessario imparare l'utilizzo delle <b>resistenze</b> e dei pin <b>PWM</b>.
-                                Nelle lezioni successive abbiamo iniziato ad utilizzare diversi sensori, comprendendone il funzionamento e le sue caratteristiche, con l'uso anche del <b>monitor seriale</b>.
-                                Per far funzionare il tutto, è stato necessario utilizzare l'<b>IDE di Arduino</b> per programmare il microcontrollore in un linguaggio molto simile al C. 
-                                È stata studiata quindi la sintassi del linguaggio imparando i "comandi" base.
-
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <span class="subtitle custom">Novembre 2021</span>
-                        <span class="title custom">Le memorie</span>
-                        <span class="subtitle-bottom custom">Introduzione</span>
-                        <div class="content">
-                            <img src="./images/3.png" alt="Arduino" class="image" loading="lazy">
-                            <p>
-                                Nel corso di queste lezioni, abbiamo approfondito maggiormente le caratteristiche delle <b>memorie</b> primarie e secondarie che utilizziamo tutti i giorni.
-                                Nello specifico, abbiamo analizzato le <b>memorie USB</b>, che sono le più comuni, le <b>memorie flash</b>, gli Hard Disk, le <b>memorie RAM</b>, le <b>memorie ROM</b>, le <b>memorie SRAM</b>, le <b>memorie EPROM</b> e le <b>memorie SDRAM</b>.
-                                <br>
-                                Inoltre, abbiamo continuato ad approfondire <b>Arduino</b>, conoscendo un nuovo sensore: il <b>sensore di luce</b>.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <span class="subtitle custom">Novembre/Dicembre 2021</span>
-                        <span class="title custom">Albero 3.0</span>
-                        <span class="subtitle-bottom custom">Il nostro primo progetto!</span>
-                        <div class="content">
-                            <div id="slideshow" data-component="slideshow" style="margin-left: auto;margin-right: auto; display: flex; justify-content: center;">
-                                <div role="list">
-                                    <div class="slide">
-                                        <img src="./images/4-1.png" class="image-resize" alt="">
-                                    </div>
-                                    <div class="slide">
-                                        <img src="./images/4-2.png" class="image-resize" alt="">
-                                    </div>
-                                    <div class="slide">
-                                        <img src="./images/4-3.png" class="image-resize" alt="">
-                                    </div>
-                                    <div class="slide">
-                                        <img src="./images/4-4.png" class="image-resize" alt="">
-                                    </div>
-                                    <div class="slide">
-                                        <img src="./images/4-5.png" class="image-resize" alt="">
-                                    </div>
-                                </div>
-                            </div>
-                        
-                            <br>
-                            <p>
-                                Durante questo periodo, volendo mettere in pratica le nostre nuove conoscenze e le nostre capacità di programmazione, abbiamo progettato l'<b>Albero 3.0</b>.
-                                Questo progetto, consisteva nel realizzare un albero di Natale totalmente domotico, controllabile da remoto.
-                                <br>
-                                Per poter realizzare l’Albero 3.0, abbiamo utilizzato un microcontrollore <b>Arduino Mega 2560</b> e un modulo wifi <b>NodeMCU ESP8266</b>, capace di connettersi alla rete internet locale, per
-                                poter comunicare con il sito web, appositamente realizzato da noi attraverso tecnologie di sviluppo come <b>HTML, CSS e JavaScript</b>. Questo sito web, permetteva di controllare da remoto ogni singola
-                                pallina di natale, permettendone l'<b>accensione e lo spegnimento</b>.
-                                <br>
-                                <br>
-                                Maggiori informazioni sono presenti al seguente <a href="https://bit.ly/albero-natale-3-0" target="_blank">link</a>.
-                            </p>
-                        </div>
-                    </div>
-
-                    <div class="swiper-slide">
-                        <span class="subtitle custom">Dicembre 2021</span>
-                        <span class="title custom">Educazione Civica</span>
-                        <span class="subtitle-bottom custom">La sostenibilità</span>
-                        <div class="content">
-                            <img src="./images/5.png" alt="Arduino" class="image" loading="lazy">
-                            <p>
-                                Nel corso di queste lezioni, abbiamo terminato lo studio delle memorie e iniziato gli argomenti di <b>educazione civica</b>.
-                                Nello specifico, abbiamo parlato della <b>sostenibilità digitale</b>, utilizzando dei materiali forniti da <b>Samsung</b>.
-                                Ci siamo inoltre soffermati sui <b>rifiuti RAEE</b>, realizzando anche un elaborato dove abbiamo individuato i rifiuti RAEE nelle nostre case.
-                                Abbiamo, infine realizzato un <b>preventivo per l'acquisto di un computer desktop</b> con un determinato budget.
+                                Nel corso di queste lezioni, abbiamo analizzato nel dettaglio, come un computer gestisca le sue <b>partizioni</b>, e il relativo <b>file system</b>, 
+                                studiando quindi nel dettaglio il <b>Master Boot Record</b> e il <b>GUID Partition Table</b>.
                             </p>
                         </div>
                     </div>
@@ -150,6 +90,8 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.4/swiper-bundle.min.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/simple-slider/1.0.1/simpleslider.min.js"></script>
     <script src="./script.js"></script>
+    <script src="../detect.js"></script>
+
 </body>
 
 </html>
