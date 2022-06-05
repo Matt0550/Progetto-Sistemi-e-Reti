@@ -24,10 +24,10 @@ $(document).ready(function () {
                 $(".swiper-pagination-custom .swiper-pagination-switch").removeClass("active");
                 $(".swiper-pagination-custom .swiper-pagination-switch").eq(mySwiper.realIndex).addClass("active");
             },
-            // On last slide swipe, go to first slide
+            // On last slide swipe, go to 2021 page
             transitionEnd: function () {
                 if (this.realIndex === 0) {
-                    // Redirect to next page
+                    // Redirect to 2021 page
                     window.location.href = "../2021/";
                 }
             }

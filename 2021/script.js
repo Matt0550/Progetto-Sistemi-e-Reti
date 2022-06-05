@@ -24,10 +24,10 @@ $(document).ready(function () {
         $(".swiper-pagination-custom .swiper-pagination-switch").removeClass("active");
         $(".swiper-pagination-custom .swiper-pagination-switch").eq(mySwiper.realIndex).addClass("active");
       },
-      // On last slide swipe, go to first slide
+      // On last slide swipe, go to 2022 page
       transitionEnd: function () {
         if (this.realIndex === this.slides.length - 1) {
-          // Redirect to next page
+          // Redirect to 2022 page
           window.location.href = "../2022/";
         }
       }
@@ -41,6 +41,9 @@ $(document).ready(function () {
 
 });
 
+/*
+  Slideshow
+*/
 var slideshows = document.querySelectorAll('[data-component="slideshow"]');
 slideshows.forEach(initSlideShow);
 
