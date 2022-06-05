@@ -18,12 +18,14 @@ function modal(screenWidth) {
     }
 }
 
-// On screen resize, get the width of the window
-window.addEventListener('resize', () => {
-    var width = window.innerWidth;
-    modal(width); // Call the modal function to check if the modal should be opened or closed
-});
-
 // On page load, get the width of the window
 var width = window.innerWidth;
 modal(width);
+
+// On screen resize, get the width of the window
+window.addEventListener('resize', () => {
+    if(window.innerWidth != width) {
+        width = window.innerWidth;
+        modal(width); // Call the modal function to check if the modal should be opened or closed
+    }
+});
